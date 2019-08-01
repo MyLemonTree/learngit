@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" id="not-found"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>It's cool</title>
+    <!--script async="" src="http://cdn.gbtags.com/analytics.js/1.5.2/analytics.min.js"></script>-->
+	<script async="" src="https://cdn.bootcss.com/analytics.js/1.5.2/analytics.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>
+    <style type="text/css">
+   		@import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
+		@import url(http://fonts.googleapis.com/css?family=Karla:400);
+		@import url(http://fonts.googleapis.com/css?family=Inconsolata:400);
+		/* line 1, ../../_sass/reset.scss */
+		html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+		  margin: 0;
+		  padding: 0;
+		  border: 0;
+		  font-size: 100%;
+		  vertical-align: baseline;
+		  background: transparent;
+		}
+		
+		/* line 3, ../../_sass/404.scss */
+		#not-found, #not-found body {
+		  display: table;
+		  margin: 0;
+		  padding: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+		
+		/* line 11, ../../_sass/404.scss */
+		#not-found body {
+		  position: relative;
+		  background-color: #1d2b2a;
+		  background-image: url(404-stripe.png), url(404-noise.png);
+		  background-repeat: repeat-x, repeat;
+		  background-position: 0 0%;
+		  background-attachment: fixed;
+		  font-size: 30px;
+		  font-family: Inconsolata, "Lucida Console", Monaco, Courier, monospace;
+		  font-smooth: never;
+		  line-height: 2em;
+		  color: #d4f8e3;
+		  -webkit-font-smoothing: none;
+		  text-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+		  -moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+		  -webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+		  animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+		}
+		/* line 26, ../../_sass/404.scss */
+		#not-found body #holder {
+		  display: table-cell;
+		  vertical-align: bottom;
+		  max-width: 800px;
+		  margin: 0 auto;
+		}
+		/* line 32, ../../_sass/404.scss */
+		#not-found body #story1,
+		#not-found body #story {
+		  padding: 10px 0 10px;
+		  max-width: 100%;
+		  white-space: pre;
+		  line-height: 1.25em;
+		}
+		/* line 38, ../../_sass/404.scss */
+		#not-found body #story1:after {
+		  visibility: visible;
+		  content: '';
+		  background-color: #d4f8e3;
+		  display: inline-block;
+		  position: relative;
+		  width: 0.5em;
+		  height: 1em;
+		  top: 5px;
+		  margin-left: 0;
+		  -moz-box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+		  -webkit-box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+		  box-shadow: -2px 0 0px rgba(0, 0, 225, 0.4), -1px 0 3px rgba(103, 171, 236, 0.6), 1px 0 4px rgba(69, 112, 204, 0.5);
+		  -moz-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+		  -webkit-animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+		  animation: flicker 0.1s steps(2, start) infinite, ready 1s steps(2, start) 25s infinite;
+		}
+		/* line 52, ../../_sass/404.scss */
+		#not-found body #kick {
+		  text-shadow: none;
+		  margin: 10px;
+		}
+		/* line 55, ../../_sass/404.scss */
+		#not-found body #kick a {
+		  background-color: #d4f8e3;
+		  color: #1d2b2a;
+		}
+		/* line 61, ../../_sass/404.scss */
+		#not-found body .typed-cursor {
+		  display: none;
+		}
+		
+		@-moz-keyframes blink {
+		  to {
+		    background-color: #223332;
+		  }
+		}
+		@-webkit-keyframes blink {
+		  to {
+		    background-color: #223332;
+		  }
+		}
+		@keyframes blink {
+		  to {
+		    background-color: #223332;
+		  }
+		}
+		@-moz-keyframes skip {
+		  to {
+		    background-position: 0 100%;
+		  }
+		}
+		@-webkit-keyframes skip {
+		  to {
+		    background-position: 0 100%;
+		  }
+		}
+		@keyframes skip {
+		  to {
+		    background-position: 0 100%;
+		  }
+		}
+		@-moz-keyframes flicker {
+		  to {
+		    color: #bddeca;
+		  }
+		}
+		@-webkit-keyframes flicker {
+		  to {
+		    color: #bddeca;
+		  }
+		}
+		@keyframes flicker {
+		  to {
+		    color: #bddeca;
+		  }
+		}
+		@-moz-keyframes ready {
+		  to {
+		    visibility: hidden;
+		  }
+		}
+		@-webkit-keyframes ready {
+		  to {
+		    visibility: hidden;
+		  }
+		}
+		@keyframes ready {
+		  to {
+		    visibility: hidden;
+		  }
+		}
+		@media screen and (max-width: 400px) {
+		  /* line 84, ../../_sass/404.scss */
+		  #not-found body {
+		    font-size: 18px;
+		  }
+		}
+		    
+    </style>
+    <script type="text/javascript">
+ ! function($) {
+     "use strict";
+     var Typed = function(el, options) {
+         // 选择原件操作文本
+         this.el = $(el);
+         // 原件
+         this.options = $.extend({}, $.fn.typed.defaults, options);
+         // 属性键入
+         this.isInput = this.el.is('input');
+         this.attr = this.options.attr;
+         // 显示光标
+         this.showCursor = this.isInput ? false : this.options.showCursor;
+         // 元素文本内容
+         this.elContent = this.attr ? this.el.attr(this.attr) : this.el.text()
+         // html或者纯文本
+         this.contentType = this.options.contentType;
+         //打字速度
+         this.typeSpeed = this.options.typeSpeed;
+         // 在打字开始之前添加一个延迟
+         this.startDelay = this.options.startDelay;
+         // 后退速度
+         this.backSpeed = this.options.backSpeed;
+         // 后退时间等待的时间
+         this.backDelay = this.options.backDelay;
+         // 输入文本字符串
+         this.strings = this.options.strings;
+         // 当前字符串的字符数位置
+         this.strPos = 0;
+         // 当前阵列位置
+         this.arrayPos = 0;
+         // 号码停止后退。
+         // 默认为0，可以根据多少个字符来改变
+         // 你想当时删除
+         this.stopNum = 0;
+         // 循环逻辑
+         this.loop = this.options.loop;
+         this.loopCount = this.options.loopCount;
+         this.curLoop = 0;
+         // 为了停止
+         this.stop = false;
+         // 自定义光标
+         this.cursorChar = this.options.cursorChar;
+         // 拖拽字符串
+         this.shuffle = this.options.shuffle;
+         // 字符串的顺序
+         this.sequence = [];
+         // 所有程序启动
+         this.build();
+     };
+     Typed.prototype = {
+         constructor: Typed
+         ,
+         init: function() {
+             //开始循环w /第一个当前字符串（全局self.string）
+             // 当前字符串将作为参数每次在这之后被传递
+             var self = this;
+             self.timeout = setTimeout(function() {
+                 for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
+                 // 如果为true，则调整数组
+                 if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+                 // 开始输入
+                 self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
+             }, self.startDelay);
+         }
+         ,
+         build: function() {
+             // 插入光标
+             if (this.showCursor === true) {
+                 this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+                 this.el.after(this.cursor);
+             }
+             this.init();
+         }
+         // 将当前字符串状态传递给每个函数，每次调用键入1个char
+         ,
+         typewrite: function(curString, curStrPos) {
+             // 停止时退出
+             if (this.stop === true) {
+                 return;
+             }
+             // 在打字期间setTimeout的值不同
+             // 不能是全局的，因为每次循环都执行数字变化
+             var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+             var self = this;
+             // ------------- 可选的 ------------- //
+             // 更快地回填某个字符串
+             // ------------------------------------ //
+             // if (self.arrayPos == 1){
+             //  self.backDelay = 50;
+             // }
+             // else{ self.backDelay = 500; }
+             // 包含打字功能超时的人性化延迟
+             self.timeout = setTimeout(function() {
+                 // 在暂停值之前检查转义字符
+                 // 格式：\ ^ \ d + ..例如：^ 1000 ..应该可以使用^^打印^
+                 // 单个^从字符串中删除
+                 var charPause = 0;
+                 var substr = curString.substr(curStrPos);
+                 if (substr.charAt(0) === '^') {
+                     var skip = 1; // 跳过至少1
+                     if (/^\^\d+/.test(substr)) {
+                         substr = /\d+/.exec(substr)[0];
+                         skip += substr.length;
+                         charPause = parseInt(substr);
+                     }
+                     // 剥离转义字符并暂停值，以便它们不被打印
+                     curString = curString.substring(0, curStrPos) + curString.substring(curStrPos + skip);
+                 }
+
+                 if (self.contentType === 'html') {
+                     // 在打字时跳过html标签
+                     var curChar = curString.substr(curStrPos).charAt(0)
+                     if (curChar === '<' || curChar === '&') {
+                         var tag = '';
+                         var endTag = '';
+                         if (curChar === '<') {
+                             endTag = '>'
+                         } else {
+                             endTag = ';'
+                         }
+                         while (curString.substr(curStrPos).charAt(0) !== endTag) {
+                             tag += curString.substr(curStrPos).charAt(0);
+                             curStrPos++;
+                         }
+                         curStrPos++;
+                         tag += endTag;
+                     }
+                 }
+
+                 // 一个字符之后暂停的超时
+                 self.timeout = setTimeout(function() {
+                     if (curStrPos === curString.length) {
+                         // 触发回调函数
+                         self.options.onStringTyped(self.arrayPos);
+                         // 这是最后一个字符串
+                         if (self.arrayPos === self.strings.length - 1) {
+                             // 在最后输入的字符串中出现的动画
+                             self.options.callback();
+                             self.curLoop++;
+                             // 如果我们不回路就退出
+                             if (self.loop === false || self.curLoop === self.loopCount)
+                                 return;
+                         }
+                         self.timeout = setTimeout(function() {
+                             self.backspace(curString, curStrPos);
+                         }, self.backDelay);
+                     } else {
+                         /* 如果适用，在函数前调用 */
+                         if (curStrPos === 0)
+                             self.options.preStringTyped(self.arrayPos);
+                         // 开始将每个新的字符键入现有的字符串
+                         // curString：arg，self.el.html：元素中的原始文本
+                         var nextString = curString.substr(0, curStrPos + 1);
+                         if (self.attr) {
+                             self.el.attr(self.attr, nextString);
+                         } else {
+                             if (self.isInput) {
+                                 self.el.val(nextString);
+                             } else if (self.contentType === 'html') {
+                                 self.el.html(nextString);
+                             } else {
+                                 self.el.text(nextString);
+                             }
+                         }
+                         // 逐个添加字符
+                         curStrPos++;
+                         // 循环功能
+                         self.typewrite(curString, curStrPos);
+                     }
+                     // 结束字符暂停
+                 }, charPause);
+                 // 打字的人性化价值
+             }, humanize);
+         }
+         ,
+         backspace: function(curString, curStrPos) {
+             // 停止时退出
+             if (this.stop === true) {
+                 return;
+             }
+             // 在打字期间setTimeout的值不同
+             // 不能是全局的，因为每次循环都执行数字变化
+             var humanize = Math.round(Math.random() * (100 - 30)) + this.backSpeed;
+             var self = this;
+             self.timeout = setTimeout(function() {
+                 // ----- this part is optional ----- //
+                 // 检查字符串数组位置
+                 // 在第一个字符串上，只删除一个字
+                 // stopNum实际上代表了字符的数量
+                 // 保持当前的字符串。 在我的情况下是14。
+                 // if (self.arrayPos == 1){
+                 //  self.stopNum = 14;
+                 // }
+                 //每隔一段时间，删除整个类型的字符串
+                 // else{
+                 //  self.stopNum = 0;
+                 // }
+                 if (self.contentType === 'html') {
+                     // 跳过html标签，而后退
+                     if (curString.substr(curStrPos).charAt(0) === '>') {
+                         var tag = '';
+                         while (curString.substr(curStrPos).charAt(0) !== '<') {
+                             tag -= curString.substr(curStrPos).charAt(0);
+                             curStrPos--;
+                         }
+                         curStrPos--;
+                         tag += '<';
+                     }
+                 }
+                 // -----继续重要的东西 ----- //
+                 // 用基本文本+类型字符替换文本
+                 var nextString = curString.substr(0, curStrPos);
+                 if (self.attr) {
+                     self.el.attr(self.attr, nextString);
+                 } else {
+                     if (self.isInput) {
+                         self.el.val(nextString);
+                     } else if (self.contentType === 'html') {
+                         self.el.html(nextString);
+                     } else {
+                         self.el.text(nextString);
+                     }
+                 }
+                 // 如果该号码（在当前字符串字符的ID）是
+                 // 小于停止号码，请继续
+                 if (curStrPos > self.stopNum) {
+                     // 逐个减去字符
+                     curStrPos--;
+                     // 循环功能
+                     self.backspace(curString, curStrPos);
+                 }
+                 // 如果达到停止号码，则增加
+                 // 数组位置到下一个字符串
+                 else if (curStrPos <= self.stopNum) {
+                     self.arrayPos++;
+                     if (self.arrayPos === self.strings.length) {
+                         self.arrayPos = 0;
+                         // 再次整理序列
+                         if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+                         self.init();
+                     } else
+                         self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+                 }
+                 // 打字的人性化价值
+             }, humanize);
+         }
+         /**
+          * 随机播放给定数组中的数字。
+          * @param {Array} array
+          * @returns {Array}
+          */
+         ,shuffleArray: function(array) {
+             var tmp, current, top = array.length;
+             if(top) while(--top) {
+                 current = Math.floor(Math.random() * (top + 1));
+                 tmp = array[current];
+                 array[current] = array[top];
+                 array[top] = tmp;
+             }
+             return array;
+         }
+         // 启动和停止目前没有工作
+         // , stop: function() {
+         //     var self = this;
+         //     self.stop = true;
+         //     clearInterval(self.timeout);
+         // }
+         // , start: function() {
+         //     var self = this;
+         //     if(self.stop === false)
+         //        return;
+
+         //     this.stop = false;
+         //     this.init();
+         // }
+         // 重置并重建元素
+         ,
+         reset: function() {
+             var self = this;
+             clearInterval(self.timeout);
+             var id = this.el.attr('id');
+             this.el.after('<span id="' + id + '"/>')
+             this.el.remove();
+             if (typeof this.cursor !== 'undefined') {
+                 this.cursor.remove();
+             }
+             // 发送回调
+             self.options.resetCallback();
+         }
+     };
+
+     $.fn.typed = function(option) {
+         return this.each(function() {
+             var $this = $(this),
+                 data = $this.data('typed'),
+                 options = typeof option == 'object' && option;
+             if (!data) $this.data('typed', (data = new Typed(this, options)));
+             if (typeof option == 'string') data[option]();
+         });
+     };
+     $.fn.typed.defaults = {
+         strings: ["These are the default values...", "You know what you should do?", "Use your own!", "Have a great day!"],
+         // 打字速度
+         typeSpeed: 0,
+         // 打字开始前的时间
+         startDelay: 0,
+         // 后退速度
+         backSpeed: 0,
+         // 调整字符串
+         shuffle: false,
+         // 退格之前的时间
+         backDelay: 500,
+         // 循环
+         loop: false,
+         // false = infinite
+         loopCount: false,
+         // 显示光标
+         showCursor: true,
+         // 字符光标
+         cursorChar: "|",
+         // 属性为type（null == text）
+         attr: null,
+         // 无论是HTML还是文字
+         contentType: 'html',
+         // 调用完成回调函数
+         callback: function() {},
+         // 在每个字符串之前启动回调函数
+         preStringTyped: function() {},
+         //每个类型的字符串的回调
+         onStringTyped: function() {},
+         // 回调重置
+         resetCallback: function() {}
+     };
+ }(window.jQuery);
+    </script>
+    <script type="text/javascript">
+$.getScript('http://pv.sohu.com/cityjson?ie=utf-8',function(){  
+	  /* alert(remote_ip_info.country);//国家  
+	  alert(remote_ip_info.province);//省份  
+	  alert();//城市 */  
+	  var weekdays = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+      var dayOfWeekIndex = (new Date()).getDay();
+      var dayOfWeek = weekdays[dayOfWeekIndex];
+      var dayOfWeekPastIndex = Math.floor(weekdays.length * Math.random());
+      var dayOfWeekPast;
+      var hourOfDay = new Date().getHours();
+      var timeOfDay;
+    	//var cheng = remote_ip_info.city;
+    	//if(cheng != null || cheng != ""){在这个" + dayOfWeek + "的" + timeOfDay +"
+    	    if (dayOfWeekPastIndex == dayOfWeekIndex) {
+              dayOfWeekPast = weekdays[(dayOfWeekPastIndex + 1) % weekdays.length];
+            } else {
+              dayOfWeekPast = weekdays[dayOfWeekPastIndex];
+            }
+    	    if ((hourOfDay >= 4) && (hourOfDay <= 11)) {
+                timeOfDay = "上午";
+              } else if ((hourOfDay >= 12) && (hourOfDay <= 16)) {
+                timeOfDay = "下午";
+              } else { 
+                timeOfDay = "晚上";
+              }
+            $('#story').typed({
+                strings: ["hello.大家好.^2000\n在这汇报末尾...^2000\n我要再给你们介绍一下我.^2000\n你好.^2000\n我是一个程序员.^2000\n平时也没什么爱好.^2000\n我有一个理想.那就是.^1000.^1000.^1000"],
+                typeSpeed: 50,
+                backDelay: 800,
+                loop: false,
+                loopCount: false,
+                callback: function(){
+                  $('#story1').typed({
+                      strings: ["钱和浪.^2000额...", "事业和远方.^2000\n我爱写程序.^2000\n我爱做很Cool的东西.^2000\n报告完毕...^2000\n感谢倾听!"],
+                      typeSpeed: 50,
+                      backDelay: 500,
+                      loop: false,
+                      loopCount: false
+                  });
+                }
+            });
+    	//}
+	});  
+setTimeout("open(location, '_self').close();",40000);
+</script>
+  </head>
+  <body>
+    <div id="holder">
+    <div style="width:790px;margin:auto;">
+    <span id="story"></span>
+    <span id="story1"></span>
+    <div id="kick"></div>
+    </div>
+      </div>
+
+
+</body></html>
